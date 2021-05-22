@@ -19,37 +19,37 @@
     <text style="position: absolute;margin-top: 35vh;margin-left: 10vw;transform: translate(-50%, -50%);">
         Belief
     </text>
-    <button type="button" class="btn btn-outline-primary" onclick="adda()"
+    <button type="button" class="btn btn-outline-primary" onclick="add_a()"
         style="position: absolute;margin-top: 40vh;margin-left: 10vw;transform: translate(-50%, -50%);">
         plus
     </button>
-    <button type="button" class="btn btn-outline-info" onclick="minusa()"
+    <button type="button" class="btn btn-outline-info" onclick="minus_a()"
         style="position: absolute;margin-top: 50vh;margin-left: 10vw;transform: translate(-50%, -50%);">
         minus
     </button>
     <text style="position: absolute;margin-top: 30vh;margin-left: 50vw;transform: translate(-50%, -50%);">
         弃权
     </text>
-    <button type="button" class="btn btn-outline-primary" onclick="addno()"
+    <button type="button" class="btn btn-outline-primary" onclick="add_no()"
         style="position: absolute;margin-top: 35vh;margin-left: 50vw;transform: translate(-50%, -50%);">
         plus
     </button>
-    <button type="button" class="btn btn-outline-info" onclick="minusno()"
+    <button type="button" class="btn btn-outline-info" onclick="minus_no()"
         style="position: absolute;margin-top: 50vh;margin-left: 50vw;transform: translate(-50%, -50%);">
         minus
     </button>
     <text style="position: absolute;margin-top: 35vh;margin-left: 90vw;transform: translate(-50%, -50%);">
         Butterfly
     </text>
-    <button type=" button" class="btn btn-outline-primary" onclick="addb()"
+    <button type=" button" class="btn btn-outline-primary" onclick="add_b()"
         style="position: absolute;margin-top: 40vh;margin-left: 90vw;transform: translate(-50%, -50%);">
         plus
     </button>
-    <button type="button" class="btn btn-outline-info" onclick="minusb()"
+    <button type="button" class="btn btn-outline-info" onclick="minus_b()"
         style="position: absolute;margin-top: 50vh;margin-left: 90vw;transform: translate(-50%, -50%);">
         minus
     </button>
-    <button type="button" class="btn btn-outline-info" onclick="clearVote()"
+    <button type="button" class="btn btn-outline-info" onclick="clear_vote()"
         style="position: absolute;margin-top: 90vh;margin-left: 50vw;transform: translate(-50%, -50%);">
         重置
     </button>
@@ -61,27 +61,27 @@
     var a = 0;
     var no = 0;
     var b = 0;
-    function adda() {
+    function add_a() {
         a = a + 1;
         set();
     }
-    function addb() {
+    function add_b() {
         b = b + 1;
         set();
     }
-    function addno() {
+    function add_no() {
         no = no + 1;
         set();
     }
-    function minusa() {
+    function minus_a() {
         a = a - 1;
         set();
     }
-    function minusb() {
+    function minus_b() {
         b = b - 1;
         set();
     }
-    function minusno() {
+    function minus_no() {
         no = no - 1;
         set();
     }
@@ -102,7 +102,7 @@
         }
 
     }
-    function clearVote() {
+    function clear_vote() {
         a = 0;
         b = 0;
         no = 0;
